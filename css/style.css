@@ -8,12 +8,18 @@ body {
 
 .container {
     max-width: 720px;
+    height: 100vh;
     margin: 0 auto;
 }
 
-.slide-wrapper .active img {
+.slide-wrapper li {
+    max-height: 70vh;
+}
+
+.slide-wrapper li img {
     display: block;
     max-width: 100%;
+    max-height: 100%;
 }
 
 .controller-list {
@@ -44,7 +50,6 @@ body {
 
 .info-product {
     position: relative;
-    top: -80px;
 }
 
 .background-strip {
@@ -110,3 +115,8 @@ body {
     margin-bottom: 53px;
 }
 
+@media screen and (max-width: 531px) {
+    .slide-wrapper li {
+        max-height: 55vh;
+    }
+}
