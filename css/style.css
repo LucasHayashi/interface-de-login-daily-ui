@@ -1,0 +1,112 @@
+@import "reset.css"; 
+@import url('http://fonts.cdnfonts.com/css/euclid-circular-a');
+
+body {
+    font-family: 'Euclid Circular A', sans-serif;
+    background-color: #F5F5F5;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.slide-wrapper .active img {
+    display: block;
+    max-width: 100%;
+}
+
+.controller-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.controller-list li {
+    padding-right: 8px;
+}
+
+.target::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #F2C98B;
+    cursor: pointer;
+}
+
+.target.active::before {
+    width: 24px;
+    border-radius: 10em;
+    background-color: #E9900B;
+}
+
+.info-product {
+    position: relative;
+    top: -80px;
+}
+
+.background-strip {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: #df8a63;
+    position: absolute;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F5F5F5;
+    border-top-left-radius: 10em;
+    position: absolute;
+    padding: 0 30px;
+
+}
+
+.info-content .title {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.65);
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.info-content .description {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(7, 7, 7, 0.65);
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: block;
+    width: 250px;
+    height: 45px;
+    border-radius: 10em;
+    border: 1px solid #E9900B;
+    font-size: 1.125em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+}
+
+.btn.btn-login {
+    background-color: #E9900B;
+    color: #FFF;
+    margin-bottom: 24px;
+}
+
+.btn.btn-sign-in {
+    background-color: transparent;
+    color: #E9900B;
+    margin-bottom: 53px;
+}
+
