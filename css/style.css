@@ -93,28 +93,151 @@ body {
     width: 250px;
     height: 45px;
     border-radius: 10em;
-    border: 1px solid #E9900B;
+    border: 2px solid #E9900B;
     font-size: 1.125em;
     text-align: center;
     cursor: pointer;
 }
 
 .btn:hover {
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+    box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.4)
 }
 
 .btn.btn-login {
     background-color: #E9900B;
-    color: #FFF;
     margin-bottom: 24px;
+}
+
+.btn.btn-login a {
+    text-decoration: none;
+    color: #FFF!important;
 }
 
 .btn.btn-sign-in {
     background-color: transparent;
-    color: #E9900B;
     margin-bottom: 53px;
 }
 
+.btn.btn-sign-in a {
+    text-decoration: none;
+    color: #E9900B!important;
+}
+
+/*Login*/
+.container-login {
+    display: flex;
+    height: 100vh;
+    max-width: 720px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login h1 {
+    font-size: 1.375em;
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+
+.inpt-email {
+    display:inline-block;
+    margin-bottom: 30px;
+}
+
+.inpt {
+    display: block;
+    width: 250px;
+    height: 45px;
+    border-radius: 10em;
+    border: 2px solid #ACACAC;
+    background-color: #F5F5F5;
+    font-size: 1.125em;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.75em;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.inpt:focus{
+    outline: unset;
+    border: 2px solid #E9900B;
+}
+
+.inpt::placeholder {
+    color: #959393;
+}
+
+.inpt.inpt-login {
+    background-color: #E9900B;
+    border: none;
+    color: #FFF;
+    font-size: 1.125em;
+    text-align: center;
+    margin: 60px auto;  
+}
+
+.inpt.inpt-login:hover {
+    box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.4)
+}
+
+.types {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.types li a img {
+    display: block;
+    width: 60px;
+    transition: .3s;
+}
+
+.types li a img:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.create-account {
+    margin-bottom: 50px;
+}
+
+.create-account a, .form-login a,.strip-info {
+    font-size: 0.75em;
+    font-weight: 500;
+    color: #959393;
+}
+
+.create-account p {
+    box-sizing: border-box;
+    font-size: 0.75em;
+}
+
+.create-account a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.alternative-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.strip-info {
+    margin-bottom: 18px;
+}
+
+.strip-info::before, .strip-info::after {
+    content: '';
+    display: inline-block;
+    width: 130px;
+    margin: 0px 5px 3px 5px;
+    height: 1px;
+    background-color: #E9900B;
+}
+
+
+/*Media Queries*/
 @media screen and (max-width: 531px) {
     .slide-wrapper li {
         max-height: 55vh;
