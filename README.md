@@ -1,3 +1,4 @@
-# Desenvolvimento das páginas do projeto Daily UI 001 da UX Designer Gabriele Pereira
+# Desenvolvimento das interfaces de login do projeto Daily UI em HTML e CSS
+> Agradecimentos a Gabriela Pereira que disponibilizou seu [protótipo]
 
-##Utilizado apenas HTML e CSS para construção das páginas, a tela inicial de login não está 100% adaptadas por conta dos recursos disponibilizados para o desenvolvimento.
+[protótipo]: https://www.figma.com/file/uwJhhogUtHrAPo8c4HCjYI/Leva
